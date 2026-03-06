@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "BMS Ticket Watcher",
+  "version": "1.0",
+  "description": "Auto-watches BMS and clicks Book Now",
+  "permissions": ["scripting", "tabs", "offscreen"],
+  "host_permissions": ["https://in.bookmyshow.com/*"],
+  "background": { "service_worker": "background.js" },
+  "web_accessible_resources": [{
+    "resources": ["hello.mp3", "offscreen.html", "offscreen.js"],
+    "matches": ["<all_urls>"]
+  }]
+}
